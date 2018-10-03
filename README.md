@@ -1,6 +1,14 @@
 # corentin-nuxt-starter
 
-> nuxt starter on steroid
+> nuxt custom starter
+
+## TODO
+- Push vuepress on github page
+- Clean sass mixin and other variables
+- Add sassdoc
+- Add plugin wordpress (wp api)
+- Configure rules for eslint
+- MAKE PRETTIER WORK WITH ESLINT
 
 ## Build Setup
 
