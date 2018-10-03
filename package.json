@@ -1,0 +1,33 @@
+{
+  "name": "corentin-nuxt-starter",
+  "version": "1.0.0",
+  "description": "Nuxt custom starter",
+  "author": "Corentin Marzin",
+  "private": true,
+  "scripts": {
+    "dev": "cross-env NODE_ENV=dev HOST=0.0.0.0 PORT=3333 nuxt",
+    "prod": "cross-env HOST=0.0.0.0 PORT=3333 nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "precommit": "npm run lint",
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "nuxt": "^2.1.0",
+    "sass-loader": "^7.0.3",
+    "node-sass": "^4.9.0"
+  },
+  "devDependencies": {
+    "cross-env": "^5.2.0",
+    "babel-eslint": "^8.2.1",
+    "eslint": "^4.15.0",
+    "eslint-loader": "^1.7.1",
+    "eslint-friendly-formatter": "^3.0.0",
+    "eslint-plugin-vue": "^4.0.0",
+    "vuepress": "^0.14.4"
+  }
+}
