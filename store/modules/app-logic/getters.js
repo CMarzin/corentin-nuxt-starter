@@ -6,5 +6,5 @@
 
 export default {
   getCurrentPage: state => state.currentPage,
-  getVersion: state => state.version
+  getVersion: state => state.version,
 }

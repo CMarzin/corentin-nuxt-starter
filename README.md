@@ -10,6 +10,12 @@
 - Configure rules for eslint
 - MAKE PRETTIER WORK WITH ESLINT
 
+## Informations
+
+```json
+    // temporary fix ESLint: wrapCoreRule is not a function
+    "eslint-plugin-vue": "5.1.0",
+```
 ## Build Setup
 
 ``` bash

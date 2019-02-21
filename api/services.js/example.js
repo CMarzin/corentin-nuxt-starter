@@ -1,26 +1,32 @@
 import ApiClient from '../client'
 
 export default {
-  post: (data) => {
-    const requestPath = process.env.apiAppmed;
-    const requestParams = '';
+  post: data => {
+    const requestPath = process.env.baseUrl
+    const requestParams = ''
     const params = {}
 
     return ApiClient.request(requestPath, requestParams, params, data, 'POST')
   },
-  postEncodedData: (data) => {
-    const requestPath = process.env.apiAppmed;
-    const requestParams = '';
+  postEncodedData: data => {
+    const requestPath = process.env.baseUrl
+    const requestParams = ''
     const params = {}
 
     const encodedData = JSON.stringify(data)
 
-    return ApiClient.request(requestPath, requestParams, params, encodedData, 'POST')
+    return ApiClient.request(
+      requestPath,
+      requestParams,
+      params,
+      encodedData,
+      'POST'
+    )
   },
   get: () => {
-    const requestPath = process.env.apiAppmed;
-    const requestParams = '';
-    const params = {}
+    const requestPath = process.env.baseUrl
+    const requestParams = ''
+    // const params = {}
 
     return ApiClient.request(requestPath, requestParams)
   },

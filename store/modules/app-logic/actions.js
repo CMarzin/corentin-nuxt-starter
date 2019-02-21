@@ -4,12 +4,10 @@
  *
  */
 
-import {
-  SET_CURRENT_PAGE
- } from './mutationsTypes.js';
+import { SET_CURRENT_PAGE } from './mutationsTypes.js'
 
 export default {
   setCurrentPage: ({ commit }, title) => {
-    commit(SET_CURRENT_PAGE, title);
-  }
-};
+    commit(SET_CURRENT_PAGE, title)
+  },
+}

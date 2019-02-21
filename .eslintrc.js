@@ -1,14 +1,13 @@
 module.exports = {
   root: true,
   env: {
-    browser: true,
-    node: true
-  },
-  parserOptions: {
-    parser: 'babel-eslint'
+    node: true,
   },
   extends: [
-    'plugin:vue/recommended'
+    'eslint:recommended',
+    'plugin:vue/recommended',
+    'plugin:prettier/recommended',
+    'prettier/vue'
   ],
   // required to lint *.vue files
   plugins: [
@@ -19,6 +18,10 @@ module.exports = {
     'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
     'semi': ['error', 'never'],
-    'indent': ['error', 2]
+    'indent': ['error', 2],
+    'prettier/prettier': ['error', { 'semi': false }]
+  },
+  parserOptions: {
+    parser: 'babel-eslint'
   }
 }
